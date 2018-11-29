@@ -27,11 +27,22 @@ var quizOver = false;
 displayCurrentQuestion();
 document.getElementById("quiz-message").style.display = 'none';
 function displayNext() {
-    /*Write your code here */
+    if(currentQuestion<2)
+    {
+        var inn=document.querySelector(selectors:"input(type--radio]:checked");
+        if(inn=null)
+        {
+            var quiz=document.getElementById(elementid:"choice.list");
+            quiz.style.display="inline";
+            quiz.innerText='please select an answer';
+            var choise=documentv.getElementById(elementid:"choice")
+        }
+    }
+
 }
 
 function displayCurrentQuestion() {
-    /*Write your code here */
+
 }
 
 function resetQuiz() {
